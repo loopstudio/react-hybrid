@@ -22,5 +22,8 @@
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "src/**/*.native.tsx", "src/**/*.ios.tsx", "src/**/*.android.tsx"
   ]
 }
