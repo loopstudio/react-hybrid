@@ -65,3 +65,15 @@ cp tsconfig.web.json tsconfig.json
 fi
 yarn
 ```
+
+## Reactotron
+
+Reactotron is a macOS, Windows, and Linux app for inspecting your React JS and React Native apps.
+
+Install it from: https://github.com/infinitered/reactotron/releases/tag/v2.17.1
+
+Note: If using an Android device or emulator run the following command to make sure it can connect to Reactotron:
+
+```
+adb reverse tcp:9090 tcp:9090
+```
