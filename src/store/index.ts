@@ -15,4 +15,15 @@ import Reactotron from './ReactotronConfig';
 
 */
 
-export const dummy = {};
+import {configureStore} from '@reduxjs/toolkit';
+import rootReducer from 'config/rootReducer';
+
+const store = configureStore({
+  reducer: rootReducer,
+});
+
+export type AppDispatch = typeof store.dispatch;
+export type RootState = ReturnType<typeof store.getState>;
+
+export default store;
+
